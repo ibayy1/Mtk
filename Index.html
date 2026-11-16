@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Art of Annuity</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background">
+        <img src="hiv.jpg" class="bg-image" alt="">
+        <div class="overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            A N N U I T Y
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#calculator">Calculator</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+
+        <p class="subtitle">
+            FINANCIAL MATHEMATICS
+        </p>
+
+        <h1>
+            The Art of <span>Annuity</span>
+        </h1>
+
+        <p class="hero-description">
+            Understand the mathematics behind
+            fixed payments and financial planning.
+        </p>
+
+        <a href="#calculator" class="hero-button">
+            Explore Calculator
+        </a>
+
+    </header>
+
+    <!-- Calculator Section -->
+    <main>
+
+        <section id="calculator" class="calculator-section">
+
+            <div class="section-heading">
+                <p>PRECISION IN EVERY CALCULATION</p>
+                <h2>Calculate Your Future</h2>
+                <p>
+                    Masukkan data pinjaman untuk menghitung
+                    angsuran anuitas secara otomatis.
+                </p>
+            </div>
+
+            <div class="calculator-card">
+
+                <!-- Input -->
+                <div class="input-panel">
+
+                    <h3>Loan Information</h3>
+
+                    <form id="annuityForm">
+
+                        <div class="input-group">
+                            <label for="principal">
+                                Jumlah Pinjaman (Rp)
+                            </label>
+
+                            <input
+                                type="number"
+                                id="principal"
+                                placeholder="Contoh: 10000000"
+                                min="1"
+                                required
+                            >
+                        </div>
+
+                        <div class="input-group">
+                            <label for="interest">
+                                Suku Bunga per Tahun (%)
+                            </label>
+
+                            <input
+                                type="number"
+                                id="interest"
+                                placeholder="Contoh: 12"
+                                min="0"
+                                step="any"
+                                required
+                            >
+                        </div>
+
+                        <div class="input-group">
+                            <label for="duration">
+                                Lama Pinjaman (Tahun)
+                            </label>
+
+                            <input
+                                type="number"
+                                id="duration"
+                                placeholder="Contoh: 2"
+                                min="1"
+                                required
+                            >
+                        </div>
+
+                        <button type="submit" class="calculate-btn">
+                            Calculate Annuity
+                        </button>
+
+                        <button type="reset" class="reset-btn">
+                            Reset
+                        </button>
+
+                    </form>
+
+                </div>
+
+                <!-- Result -->
+                <div class="result-panel">
+
+                    <h3>Calculation Result</h3>
+
+                    <div class="result-box">
+                        <p>Angsuran per Bulan</p>
+                        <h2 id="monthlyPayment">Rp 0</h2>
+                    </div>
+
+                    <div class="result-item">
+                        <p>Total Pembayaran</p>
+                        <h3 id="totalPayment">Rp 0</h3>
+                    </div>
+
+                    <div class="result-item">
+                        <p>Total Bunga</p>
+                        <h3 id="totalInterest">Rp 0</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Formula Section -->
+        <section id="about" class="formula-section">
+
+            <div class="formula-image">
+                <img
+                    src="rabies.jpg"
+                    alt="Classical heavenly painting"
+                >
+            </div>
+
+            <div class="formula-content">
+
+                <p class="subtitle">THE MATHEMATICS</p>
+
+                <h2>Understanding Annuity</h2>
+
+                <p>
+                    Anuitas merupakan sistem pembayaran
+                    dengan jumlah angsuran tetap dalam
+                    periode tertentu.
+                </p>
+
+                <div class="formula">
+                    A = P × i / [1 - (1 + i)<sup>-n</sup>]
+                </div>
+
+                <ul>
+                    <li>A = Angsuran tetap</li>
+                    <li>P = Jumlah pinjaman</li>
+                    <li>i = Suku bunga per periode</li>
+                    <li>n = Jumlah periode pembayaran</li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- Closing -->
+        <section class="closing">
+
+            <img
+                src="demam.jpg"
+                alt="Renaissance celestial painting"
+            >
+
+            <div class="closing-content">
+                <h2>Every Number Has a Story.</h2>
+                <p>
+                    A journey through mathematics,
+                    precision, and financial understanding.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            THE ART OF ANNUITY
+            <br>
+            © 2026 Financial Mathematics Project
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
